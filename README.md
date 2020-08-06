@@ -72,13 +72,13 @@ underlying increment process to be Gaussian with zero mean (or even some
 drifting mean, this would not change the argument). Then it is fully determined
 by it's autocorrelation function $\gamma(t)$, which is related to the MSD $m(t)$ by the
 relation
-$$
+```
 \gamma(t) = \frac{1}{2}\partial_t^2 m(t) + \delta(t)\partial_t m(t)\,,
-$$
+```
 which in its more useful discrete version reads
-$$
+```
 \gamma_k = \frac{1}{2}\left( m_{|k+1|} + m_{|k-1|} - 2*m_{|k|} \right)\,.
-$$
+```
 The MSD in turn is just the variance of the 3D autocorrelation we calculate for
 this algorithm. So from this we can calculate a Gaussian likelihood for given
 trajectories. Then the optimal solution to the linking problem would be to
